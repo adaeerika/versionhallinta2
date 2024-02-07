@@ -11,5 +11,16 @@ public class OhjelmointiHarjoitus {
         
         System.out.println("Guess my name (type stop to exit)");
         
+        while (true) 
+	        {
+	            String guess = scanner.nextLine();
+	
+	            if (guess.equalsIgnoreCase(answer)) 
+	            {
+	            	guesses++;
+	                System.out.println("Congratulations!");
+	                break; 
+	            }
     }
+}
 }
